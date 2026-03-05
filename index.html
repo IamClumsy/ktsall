@@ -170,12 +170,33 @@
       top: 50%;
       transform: translateY(-50%);
       font-size: 1.2rem;
-      color: #333;
+      color: #666;
       transition: color 0.2s, transform 0.2s;
     }
     a.card:hover .arrow {
       color: #aaa;
       transform: translateY(-50%) translateX(4px);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        justify-content: flex-start;
+        padding: 1.5rem 1rem;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+        letter-spacing: -0.5px;
+      }
+
+      a.card {
+        padding: 1.1rem 1.25rem;
+        border-radius: 12px;
+      }
+
+      .arrow {
+        right: 1rem;
+      }
     }
   </style>
 </head>
